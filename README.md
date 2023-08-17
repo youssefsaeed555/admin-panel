@@ -15,7 +15,7 @@ The project includes the following pages:
 - Settings
 - Subscribe
 
-![mobile (1)](https://github.com/youssefsaeed555/admin-panel/assets/81886165/f89e1b3e-3c18-4e80-936a-69b7a51ec91e)
+![mobile (1)](https://github.com/youssefsaeed555/admin-panel/assets/81886165/bbdc88f4-6833-45ba-af09-c5efbb316d55)
 
 
 ## Getting Started
