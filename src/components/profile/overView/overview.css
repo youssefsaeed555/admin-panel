@@ -1,0 +1,73 @@
+.overview {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .overview {
+    flex-direction: column;
+  }
+}
+.overview .profile {
+  text-align: center;
+  width: 300px;
+}
+@media (min-width: 767px) {
+  .overview .profile {
+    border-right: 2px solid #eee;
+    padding-right: 20px;
+  }
+}
+.overview .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.overview .profile .level {
+  background-color: #ccc;
+  height: 4px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 15px auto;
+}
+.overview .profile .level > span {
+  background-color: var(--blue-color);
+  height: 4px;
+  display: block;
+  border-radius: 10px;
+}
+.overview .profile i {
+  color: orange;
+  margin-right: 3px;
+}
+.overview .profile p:last-of-type {
+  color: gray;
+  font-size: 13px;
+}
+/* info */
+.info {
+  width: 100%;
+  font-size: 14px;
+}
+.info .box-profile {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.info .box-profile h4 {
+  width: 100%;
+  margin: 0;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.info .box-profile span:first-of-type {
+  color: gray;
+  padding-right: 5px;
+}
+.info .box-profile > div {
+  min-width: 250px;
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+}
+.info .box-profile:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,60 @@
+.profile-details {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .profile-details {
+    flex-direction: column;
+  }
+}
+.profile-details .skills {
+  flex-grow: 1;
+}
+.profile-details .skills .tech li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+.profile-details .skills .tech li span {
+  background-color: #eee;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.profile-details .latest-activities {
+  flex-grow: 2;
+}
+.profile-details .latest-activities .activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.profile-details .latest-activities .activity .info span:first-of-type {
+  font-weight: bold;
+}
+.profile-details .latest-activities .activity .info span,
+.profile-details .latest-activities .activity .date span {
+  display: block;
+  margin-bottom: 10px;
+}
+.profile-details .latest-activities img {
+  width: 65px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .profile-details .latest-activities .activity .date span {
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  .profile-details .latest-activities img {
+    margin-right: 10px;
+  }
+}

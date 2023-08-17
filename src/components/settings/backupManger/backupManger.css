@@ -1,0 +1,47 @@
+.control {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.control label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+}
+.control input {
+  appearance: none;
+}
+.control label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  border: 2px solid var(--grey-color);
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  border-radius: 4px;
+}
+.control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  border-radius: 4px;
+  background-color: var(--blue-color);
+  background-color: var(--blue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+  color: white;
+}
+.control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}

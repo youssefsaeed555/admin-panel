@@ -1,0 +1,86 @@
+.friend-card {
+  position: relative;
+}
+.friend-card .contact {
+  position: absolute;
+  color: gray;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 7px;
+}
+.friend-card .contact i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 10px;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friend-card .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.friend-card .friend-content {
+  text-align: center;
+}
+.friend-card .friend-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.friend-card .friend-content p {
+  font-size: 13px;
+}
+.friend-card .friend-icons {
+  position: relative;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+.friend-card .friend-icons div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.friend-card .friend-icons i {
+  margin-right: 10px;
+}
+.friend-card .friend-icons .vip {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: var(--orange-color);
+  opacity: 0.2;
+  font-weight: bold;
+}
+.friend-card .friend-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.friend-card .friend-info span {
+  font-size: 13px;
+}
+.friend-card .friend-info .links .link {
+  width: fit-content;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.friend-card .friend-info .links .link:first-of-type {
+  background-color: var(--blue-color);
+  margin-right: 4px;
+}
+.friend-card .friend-info .links .link:last-of-type {
+  background-color: var(--red-color);
+}

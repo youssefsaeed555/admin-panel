@@ -1,0 +1,75 @@
+.sidebar {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    width: 58px;
+    padding: 0;
+  }
+}
+.sidebar > h3 {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.sidebar h3::before,
+.sidebar h3::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: black;
+}
+.sidebar h3::before {
+  width: 80px;
+  height: 2px;
+  z-index: 1;
+  bottom: -20px;
+}
+.sidebar h3::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  bottom: -29px;
+  z-index: 2;
+  border: 5px solid white;
+}
+@media (max-width: 767px) {
+  .sidebar h3 {
+    font-size: 13px;
+    margin: 10px 0 20px;
+  }
+  .sidebar h3::after,
+  .sidebar h3::before {
+    display: none;
+  }
+}
+.sidebar ul li a {
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  /* .sidebar ul li {
+    display: block;
+  } */
+}
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: #f6f6f6;
+}
+.sidebar ul li i {
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .sidebar ul li span {
+    display: none;
+  }
+  .sidebar ul li i {
+    padding: 0 10px;
+  }
+  .sidebar ul li a {
+    margin: 0 10px;
+    justify-content: center;
+  }
+}

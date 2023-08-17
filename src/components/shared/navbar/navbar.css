@@ -1,0 +1,42 @@
+.head .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.head .search input {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 85%;
+  transition: 0.3s;
+  opacity: 1;
+  margin-left: 5px;
+}
+.head .search input:focus {
+  width: 100%;
+}
+.head .search input:focus::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+.head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+.head .icons .notification::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+}

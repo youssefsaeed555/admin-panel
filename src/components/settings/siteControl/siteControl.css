@@ -1,0 +1,27 @@
+.box-head p:last-of-type {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.box {
+  font-size: 13px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.box p:first-of-type {
+  font-size: 16px;
+}
+
+textarea {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  min-height: 150px;
+}

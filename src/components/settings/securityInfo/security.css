@@ -1,0 +1,30 @@
+.box-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.box-sec p {
+  color: gray;
+  margin: 0;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.box-sec .visit-sec {
+  display: block;
+  text-align: right;
+  width: fit-content;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: auto 0;
+}
+.gray {
+  background-color: #eee;
+  color: black;
+}
+.toggle {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}

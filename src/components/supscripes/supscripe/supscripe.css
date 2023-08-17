@@ -1,0 +1,74 @@
+.plan {
+  background-color: white;
+  padding: 20px;
+}
+.plan .top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border: 3px solid white;
+  padding: 20px;
+  outline: 3px solid;
+}
+.plan .top.green {
+  background-color: var(--green-color);
+  outline-color: var(--green-color);
+}
+.plan .top.red {
+  background-color: var(--red-color);
+  outline-color: var(--red-color);
+}
+.plan .top.blue {
+  background-color: var(--blue-color);
+  outline-color: var(--blue-color);
+}
+.plan .top h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.plan .price {
+  position: relative;
+  font-size: 40px;
+}
+.plan .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 25px;
+}
+.plan li i:first-of-type {
+  margin-right: 10px;
+  color: var(--red-color);
+}
+.plan ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.plan ul li .yes {
+  color: var(--green-color);
+}
+.plan ul li {
+  border-bottom: 1px solid #eee;
+}
+.plan ul li i:last-of-type {
+  margin-left: auto;
+  color: gray;
+  cursor: pointer;
+}
+.plan .plans-link {
+  background-color: var(--green-color);
+  color: white;
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+.plan:nth-of-type(2) .plans-link {
+  background-color: var(--red-color);
+}
+.current-plan {
+  text-align: center;
+  color: gray;
+}

@@ -1,0 +1,99 @@
+.projects .project-heading {
+  position: relative;
+}
+.projects .project-heading > span {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  font-size: 13px;
+}
+.projects .project-heading > h4 {
+  font-weight: normal;
+}
+.projects .project-heading p {
+  font-size: 14px;
+}
+.projects .project-team {
+  min-height: 100px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.projects .project-team .link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 15px;
+}
+.projects .project-team img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.projects .project-team .link:nth-of-type(2) {
+  margin-left: 25px;
+}
+.projects .project-team .link:nth-of-type(3) {
+  margin-left: 50px;
+}
+.projects .project-team .link:nth-of-type(4) {
+  margin-left: 75px;
+}
+.projects .project-team .link:nth-of-type(5) {
+  margin-left: 100px;
+}
+.projects .project-team .link:hover {
+  z-index: 10;
+}
+.projects .do {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .projects .do {
+    flex-direction: column;
+  }
+}
+.projects .do span {
+  background-color: #eee;
+  color: black;
+  font-size: 13px;
+  padding: 3px 8px;
+  width: fit-content;
+  border-radius: 6px;
+}
+.projects .project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: gray;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .projects .project-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.projects .project-info span {
+  height: 8px;
+  display: block;
+  border-radius: 10px;
+}
+.projects .project-info .prog {
+  background-color: #ccc;
+  border-radius: 10px;
+  height: 8px;
+  width: 250px;
+}
+.projects .project-info .price i {
+  display: inline-block;
+  margin-right: 5px;
+}

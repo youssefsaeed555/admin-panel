@@ -1,0 +1,35 @@
+.file-box {
+  font-size: 14px;
+}
+.file-box i {
+  color: gray;
+}
+.file-box .icon-files,
+.file-box .img-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file-box .icon-files img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+.file-box:hover .icon-files img {
+  transform: rotate(6deg);
+}
+.file-box .img-text {
+  margin-top: 20px;
+}
+.file-box .file-p {
+  color: gray;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  font-size: 13px;
+}
+.file-box .file-info {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}

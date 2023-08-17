@@ -1,0 +1,40 @@
+.box-head p:last-of-type {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+form .input {
+  width: 100%;
+  margin-bottom: 20px;
+  color: gray;
+}
+form .input label {
+  display: block;
+}
+form .input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 5px;
+  flex: 1;
+  width: 100%;
+  display: block;
+}
+
+form .email input {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+form .email input:disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+
+.visits {
+  color: var(--blue-color);
+  margin-left: 10px;
+}
